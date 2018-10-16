@@ -1,0 +1,11 @@
+# Idea configuration
+.idea/
+*.iml
+
+# Eclipse configuration
+.settings/
+.project
+.classpath
+
+# Maven compile resources
+target/
