@@ -41,9 +41,6 @@ public class AssemblyMojo extends AbstractAssemblyMojo {
     @Parameter(property = "format", defaultValue = "zip")
     private String format;
 
-    @Parameter(property = "mainClass", required = true)
-    private String mainClass;
-
     @Component
     private MavenProjectHelper projectHelper;
 

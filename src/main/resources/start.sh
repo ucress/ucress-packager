@@ -17,6 +17,6 @@ if [ "$APP_HOME" = "" ] ; then
 else
   echo JAVA_HOME : "$JAVA_HOME"
   echo APP_HOME  : "$APP_HOME"
-  nohup $JAVA_HOME/bin/java "-Dapp.home=$APP_HOME" -classpath "bin/bootstrap.jar" com.ucress.loader.Launcher ${mainClass} &
+  nohup $JAVA_HOME/bin/java "-Dapp.home=$APP_HOME" -classpath "bin/bootstrap.jar" com.ucress.loader.Launcher &
   cd $RUN_DIR
 fi

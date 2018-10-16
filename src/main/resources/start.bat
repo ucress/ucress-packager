@@ -14,7 +14,7 @@ goto end
 set APP_HOME=%cd%
 echo JAVA_HOME : "%JAVA_HOME%"
 echo APP_HOME  : "%APP_HOME%"
-"%JAVA_HOME%\bin\java.exe" "-Dapp.home=%APP_HOME%" -classpath "bin\bootstrap.jar" com.ucress.loader.Launcher ${mainClass}
+"%JAVA_HOME%\bin\java.exe" "-Dapp.home=%APP_HOME%" -classpath "bin\bootstrap.jar" com.ucress.loader.Launcher
 
 :end
 cd "%RUN_DIR%"
