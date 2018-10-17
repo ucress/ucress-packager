@@ -41,6 +41,9 @@ public class AssemblyMojo extends AbstractAssemblyMojo {
     @Parameter(property = "format", defaultValue = "zip")
     private String format;
 
+    @Parameter(property = "className", required = true)
+    private String className;
+
     @Component
     private MavenProjectHelper projectHelper;
 
@@ -128,6 +131,7 @@ public class AssemblyMojo extends AbstractAssemblyMojo {
         bootstrap.setOutputDirectory(BIN_DIR_NAME);
         assembly.addFile(bootstrap);
 
+        session.getUserProperties().setProperty("className", className);
         FileSet bats = new FileSet();
         bats.setDirectory(resources.getAbsolutePath());
         bats.setOutputDirectory(BIN_DIR_NAME);
